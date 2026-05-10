@@ -5,22 +5,17 @@
     "context": "."
   },
   "features": {
-    "ghcr.io/devcontainers/features/common-utils:2": {
-      "installZsh": false
-    },
     "ghcr.io/devcontainers/features/github-cli:1": {
       "version": "latest"
     }
   },
-  "postAttachCommand": "bash /app/startup.sh",
+  "forwardPorts": [443],
   "portsAttributes": {
     "443": {
-      "label": "Proxy Service",
+      "label": "Proxy + Web",
       "onAutoForward": "silent"
     }
   },
-  "forwardPorts": [443],
-  "hostRequirements": {
-    "cpus": 2
-  }
+  "postCreateCommand": "bash /app/setup.sh",
+  "postAttachCommand": "bash /app/startup.sh"
 }
