@@ -1,0 +1,26 @@
+{
+  "name": "Dev Workspace",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": false
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "version": "latest"
+    }
+  },
+  "postAttachCommand": "bash /app/startup.sh",
+  "portsAttributes": {
+    "443": {
+      "label": "Proxy Service",
+      "onAutoForward": "silent"
+    }
+  },
+  "forwardPorts": [443],
+  "hostRequirements": {
+    "cpus": 2
+  }
+}
