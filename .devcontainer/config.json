@@ -1,23 +1,16 @@
 {
-  "log": {
-    "loglevel": "warning"
-  },
+  "log": { "loglevel": "warning" },
   "inbounds": [
     {
       "port": 443,
       "protocol": "vless",
       "settings": {
         "clients": [
-          {
-            "id": "6b3c8ecf-c41f-41fc-8745-e6c88a8ea62c"
-          }
+          { "id": "6b3c8ecf-c41f-41fc-8745-e6c88a8ea62c" }
         ],
         "decryption": "none",
         "fallbacks": [
-          {
-            "dest": "/var/www/html",
-            "xver": 0
-          }
+          { "dest": "/var/www/html", "xver": 0 }
         ]
       },
       "streamSettings": {
@@ -29,9 +22,5 @@
       }
     }
   ],
-  "outbounds": [
-    {
-      "protocol": "freedom"
-    }
-  ]
+  "outbounds": [{ "protocol": "freedom" }]
 }
