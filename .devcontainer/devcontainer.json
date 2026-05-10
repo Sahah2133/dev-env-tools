@@ -1,15 +1,14 @@
 {
-  "name": "Dev Workspace",
+  "name": "Simple Proxy Workspace",
   "build": {
-    "dockerfile": "Dockerfile",
-    "context": "."
+    "dockerfile": "Dockerfile"
   },
   "forwardPorts": [443],
   "portsAttributes": {
     "443": {
-      "label": "Proxy + Speedtest",
+      "label": "VLESS Proxy",
       "onAutoForward": "silent"
     }
   },
-  "postAttachCommand": "bash /app/setup.sh"
+  "postAttachCommand": "echo '✅ Ready - Now make port 443 Public from Ports tab'"
 }
