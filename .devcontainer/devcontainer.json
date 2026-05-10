@@ -1,14 +1,14 @@
 {
-  "name": "Simple VLESS Multi",
+  "name": "Simple VLESS",
   "build": {
     "dockerfile": "Dockerfile"
   },
   "forwardPorts": [443],
   "portsAttributes": {
     "443": {
-      "label": "VLESS Proxy",
+      "label": "VLESS XHTTP",
       "onAutoForward": "silent"
     }
   },
-  "postAttachCommand": "echo '✅ Ready - Make port 443 Public'"
+  "postAttachCommand": "echo 'Ready - Make port 443 Public'"
 }
