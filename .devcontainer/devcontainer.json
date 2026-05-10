@@ -1,14 +1,14 @@
 {
-  "name": "Simple Proxy Workspace",
+  "name": "Simple VLESS-WS",
   "build": {
     "dockerfile": "Dockerfile"
   },
   "forwardPorts": [443],
   "portsAttributes": {
     "443": {
-      "label": "VLESS Proxy",
+      "label": "VLESS WebSocket",
       "onAutoForward": "silent"
     }
   },
-  "postAttachCommand": "echo '✅ Ready - Now make port 443 Public from Ports tab'"
+  "postAttachCommand": "echo '✅ Codespace Ready - Port 443 را Public کن'"
 }
