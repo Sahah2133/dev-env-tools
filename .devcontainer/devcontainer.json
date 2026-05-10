@@ -4,11 +4,6 @@
     "dockerfile": "Dockerfile",
     "context": "."
   },
-  "features": {
-    "ghcr.io/devcontainers/features/github-cli:1": {
-      "version": "latest"
-    }
-  },
   "forwardPorts": [443],
   "portsAttributes": {
     "443": {
@@ -16,6 +11,5 @@
       "onAutoForward": "silent"
     }
   },
-  "postCreateCommand": "bash /app/setup.sh",
   "postAttachCommand": "bash /app/startup.sh"
 }
