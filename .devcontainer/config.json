@@ -20,48 +20,7 @@
           "mode": "packet-up",
           "path": "/"
         }
-      },
-      "tag": "xhttp-in"
-    },
-    {
-      "port": 443,
-      "protocol": "vless",
-      "settings": {
-        "clients": [
-          {
-            "id": "6b3c8ecf-c41f-41fc-8745-e6c88a8ea62c"
-          }
-        ],
-        "decryption": "none"
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/ws"
-        }
-      },
-      "tag": "ws-in"
-    },
-    {
-      "port": 443,
-      "protocol": "vless",
-      "settings": {
-        "clients": [
-          {
-            "id": "6b3c8ecf-c41f-41fc-8745-e6c88a8ea62c"
-          }
-        ],
-        "decryption": "none"
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "tcp-in"
+      }
     }
   ],
   "outbounds": [
