@@ -6,9 +6,9 @@
   "forwardPorts": [443],
   "portsAttributes": {
     "443": {
-      "label": "VLESS Multi Protocol",
+      "label": "VLESS Proxy",
       "onAutoForward": "silent"
     }
   },
-  "postAttachCommand": "echo '✅ آماده شد | پورت 443 را Public کن'"
+  "postAttachCommand": "echo '✅ Ready - Make port 443 Public'"
 }
