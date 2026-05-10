@@ -1,14 +1,13 @@
 {
-  "name": "Simple VLESS",
+  "name": "G2Ray",
   "build": {
     "dockerfile": "Dockerfile"
   },
   "forwardPorts": [443],
   "portsAttributes": {
     "443": {
-      "label": "VLESS XHTTP",
+      "label": "VLESS",
       "onAutoForward": "silent"
     }
-  },
-  "postAttachCommand": "echo 'Ready - Make port 443 Public'"
+  }
 }
