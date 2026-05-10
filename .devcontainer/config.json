@@ -1,4 +1,7 @@
 {
+  "log": {
+    "loglevel": "warning"
+  },
   "inbounds": [
     {
       "port": 443,
@@ -9,7 +12,13 @@
             "id": "6b3c8ecf-c41f-41fc-8745-e6c88a8ea62c"
           }
         ],
-        "decryption": "none"
+        "decryption": "none",
+        "fallbacks": [
+          {
+            "dest": "/var/www/html",
+            "xver": 0
+          }
+        ]
       },
       "streamSettings": {
         "network": "xhttp",
