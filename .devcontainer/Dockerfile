@@ -17,8 +17,10 @@ RUN mkdir -p /var/www/html && \
 
 COPY config.json /etc/config.json
 COPY startup.sh /app/startup.sh
+COPY setup.sh /app/setup.sh
 
 RUN chmod +x /app/startup.sh
+RUN chmod +x /app/setup.sh
 
 EXPOSE 443
 
